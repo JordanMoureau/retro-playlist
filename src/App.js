@@ -7,7 +7,7 @@ import ErrorMessage from "./components/ErrorMessage";
 
 const CLIENT_ID = "517f22b742da48ce9e13e8e1f4999546";
 
-const redirectUri = "https://retro-playlist.netlify.app/callback/";
+const redirectUri = "http://retro-playlist.netlify.app/callback/";
 
 export default function App() {
   const [playlist, setPlaylist] = useState([]);
