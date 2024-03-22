@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,500;1,400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  background-color: #fffff3;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.error {
+  padding: 20px 10%;
+  text-align: center;
+  width: 68%;
+  max-width: 600px;
+  color: #ffb0db;
+}
+
+.tracks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 68%;
+}
+
+.box {
+  border: 1px solid #000;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.box h2 {
+  margin: 18px 18px 0px 18px;
+  font-size: 1.3rem;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 0px #a7a6ea;
+}
+
+.box h3 {
+  margin: 0px 18px;
+  font-size: 1.1rem;
+}
+
+.box p {
+  margin: 0px 18px;
+  font-size: 0.9rem;
+}
+
+.box button {
+  width: 100%;
+  margin-top: 18px;
+  background-color: #dcf230;
+  font-weight: 900;
+  border: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.box button:hover {
+  background-color: #ffb0db;
+}
+
+.width {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.playlist-container {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 40%;
+  max-width: 280px;
+  position: sticky;
+  top: 15px;
+}
+
+.playlist-container input {
+  width: 100%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 12px 0px;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #ffb0db;
+}
+
+.playlist-container input::placeholder {
+  color: black;
+}
+
+.playlist-container input:focus {
+  outline: none;
+}
+
+.named-playlist {
+  width: 93%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 12px 0px;
+  text-align: center;
+  border: 1px solid #000;
+  background-color: #ffb0db;
+}
+
+::selection {
+  background-color: #a7a6ea;
+}
+
+.spot-btn {
+  width: 100%;
+  background-color: #dcf230;
+  border: 1px solid black;
+  font-weight: 900;
+  margin: 10px;
+  padding: 10px 0px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.spot-btn:hover {
+  background-color: #a7a6ea;
+  box-shadow: 10px 10px 0px #ffb0db;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.search-bar input {
+  border: 1px solid black;
+  padding: 8px;
+  background-color: #ffb0db;
+}
+
+.search-bar input::placeholder {
+  color: black;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar button {
+  padding: 8px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #dcf230;
+  border-left: none;
+}
+
+.search-bar button:hover {
+  background-color: #a7a6ea;
+}
