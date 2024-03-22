@@ -7,7 +7,6 @@ import Track from "./components/Track";
 import ErrorMessage from "./components/ErrorMessage";
 
 const CLIENT_ID = "517f22b742da48ce9e13e8e1f4999546";
-//const CLIENT_SECRET = "3a2dc44a257b4c55b485e2fc77f2863e";
 
 const redirectUri = "http://localhost:3000/callback/";
 
