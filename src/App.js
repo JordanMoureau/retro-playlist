@@ -1,13 +1,11 @@
-import TrackList from "./components/Tracklist";
 import "./styles.css";
-import { useState, children } from "react";
+import { useState } from "react";
 import Playlist from "./components/Playlist";
 import SearchBar from "./components/SearchBar";
 import Track from "./components/Track";
 import ErrorMessage from "./components/ErrorMessage";
 
 const CLIENT_ID = "517f22b742da48ce9e13e8e1f4999546";
-//const CLIENT_SECRET = "3a2dc44a257b4c55b485e2fc77f2863e";
 
 const redirectUri = "http://localhost:3000/callback/";
 
@@ -145,14 +143,7 @@ export default function App() {
         {accessToken ? (
           <ErrorMessage />
         ) : (
-          <TrackList children={children}>
-            <Track
-              handleAdd={handleAdd}
-              data={TracklistData}
-              setPlaylist={setPlaylist}
-              playlist={playlist}
-            />
-          </TrackList>
+          <Track handleAdd={handleAdd} data={TracklistData} />
         )}
         <Playlist
           playlistName={playlistName}

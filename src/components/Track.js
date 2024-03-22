@@ -1,4 +1,4 @@
-export default function Track({ data, setPlaylist, playlist, handleAdd }) {
+export default function Track({ data, handleAdd }) {
   return (
     <div className="tracks">
       {data.map((song) => (
