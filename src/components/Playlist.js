@@ -21,7 +21,7 @@ export default function Playlist({
         onChange={(e) => setPlaylistName(e.target.value)}
         value={playlistName}
       >
-        <input placeholder="My Playlist" />
+        <input placeholder="My Playlist" required />
       </form>
 
       <div className="playlist">

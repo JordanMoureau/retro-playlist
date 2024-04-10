@@ -107,6 +107,10 @@ export default function App() {
   // }, [playlistName, playlistTracks]);
 
   function savePlaylist() {
+    if (!playlistName) {
+      setPlaylistName("My Playlist");
+    }
+    console.log(playlistName);
     const trackUris = playlist.map((track) => track.uri);
     return fetch(Spotify.savePlaylist(playlistName, trackUris)).then(() => {
       setPlaylist([]);
@@ -140,7 +144,7 @@ export default function App() {
     <>
       <SearchBar searchCall={searchCall} />
       <div className="App">
-        {accessToken ? (
+        {TracklistData === 0 ? (
           <ErrorMessage />
         ) : (
           <Track handleAdd={handleAdd} data={TracklistData} />
