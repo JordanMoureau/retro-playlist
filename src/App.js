@@ -147,8 +147,7 @@ export default function App() {
       <SearchBar searchCall={searchCall} />
       <div className="App">
         {TracklistData.length === 0 ? (
-          // <ErrorMessage />
-          <p>Does it work</p>
+          <ErrorMessage />
         ) : (
           <Track handleAdd={handleAdd} data={TracklistData} />
         )}
