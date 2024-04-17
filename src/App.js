@@ -140,12 +140,15 @@ export default function App() {
     }
   }
 
+  console.log("Hello World");
+
   return (
     <>
       <SearchBar searchCall={searchCall} />
       <div className="App">
-        {TracklistData === 0 ? (
-          <ErrorMessage />
+        {TracklistData.length === 0 ? (
+          // <ErrorMessage />
+          <p>Does it work</p>
         ) : (
           <Track handleAdd={handleAdd} data={TracklistData} />
         )}
