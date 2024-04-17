@@ -73,6 +73,11 @@ html {
   cursor: pointer;
 }
 
+*:disabled {
+  color: inherit;
+  opacity: 9;
+}
+
 .box button:hover {
   background-color: #ffb0db;
 }
@@ -174,6 +179,7 @@ html {
   border-left: none;
 }
 
-.search-bar button:hover {
+.search-bar button:hover:enabled {
   background-color: #a7a6ea;
+  cursor: pointer;
 }
