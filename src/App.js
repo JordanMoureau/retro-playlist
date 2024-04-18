@@ -149,7 +149,7 @@ export default function App() {
       <SearchBar searchCall={searchCall} />
       <div className="App">
         <Track handleAdd={handleAdd} data={TracklistData} />
-        )
+
         <Playlist
           playlistName={playlistName}
           setPlaylistName={setPlaylistName}
