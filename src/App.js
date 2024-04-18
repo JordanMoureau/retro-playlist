@@ -148,11 +148,8 @@ export default function App() {
     <>
       <SearchBar searchCall={searchCall} />
       <div className="App">
-        {TracklistData.length === 0 ? (
-          <ErrorMessage />
-        ) : (
-          <Track handleAdd={handleAdd} data={TracklistData} />
-        )}
+        <Track handleAdd={handleAdd} data={TracklistData} />
+        )
         <Playlist
           playlistName={playlistName}
           setPlaylistName={setPlaylistName}

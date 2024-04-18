@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 
 export default function SearchBar({ searchCall }) {
-  const [search, setSearch] = useState("top songs");
+  const [search, setSearch] = useState("");
 
   const handleSearch = useCallback((e) => {
     e.preventDefault();
